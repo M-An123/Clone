@@ -1,2 +1,2 @@
-node_modules/
-.netlify
+Backend/node_modules/netlify-cli
+node_modules
