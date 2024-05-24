@@ -1,11 +1,11 @@
 const fs=require("fs");
 const express=require("express");
 const cors = require('cors');
-const restaurants=require("./r1.json"); 
-const Locations=require("./r2.json");  
-const Mealtype=require("./r3.json");
-const locationDehli=require("./r5.json");
-const Menus=require("./r4.json");
+const restaurants=require("../r1.json"); 
+const Locations=require("../r2.json");  
+const Mealtype=require("../r3.json");
+const locationDehli=require("../r5.json");
+const Menus=require("../r4.json");
 const app=express();
 const serverless = require("serverless-http");
 const router = express.Router();
@@ -13,7 +13,7 @@ const router = express.Router();
 const port=8001;
 app.use(cors());
 app.use(express.json());
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     res.send("<h1>App is running</h1>")
 });
 app.get("/getallrestaurants", (req, res) => {

@@ -1,2 +1,5 @@
 Backend/node_modules/netlify-cli
-node_modules
+
+
+# Local Netlify folder
+.netlify
